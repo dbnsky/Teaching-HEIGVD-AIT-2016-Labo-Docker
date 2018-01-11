@@ -1,4 +1,6 @@
-## Task 0 
+# Report : AIT Labo 04 : Docker and dynamic scaling
+Yann Mahmoudi <yann.mahmoudi@heig-vd.ch> & Emmanuel Schmid <emmanuel.schmid@heig-vd.ch>
+## Task 0
 1. A production envirionnement has to be scalable and the current solution can't handle automatically and easily an increasment of the trafic.
    Adding or removing nodes involves a manual configuration and a resart of the containers. The service will be down and that's not a acceptable !
 
@@ -25,8 +27,19 @@
    It needs an human action. So it definitley not dynamic ! A dynamic solution will be implemented using Handlebars and template (nodeJS).
    Each time a node is added/removed, the Sref handler script will generated a configuration file for HAProxy.
 
-###Deliverables
+### Deliverables
 1. Take a screenshot of the stats page of HAProxy at http://192.168.42.42:1936. You should see your backend nodes.
-![statsPageTask0](assets/img/Screenshot_task0.png)
+![statsPageTask0](/assets/img/Screenshot_task0.png)
 
 2. Give the URL of your repository URL in the lab report : https://github.com/dbnsky/Teaching-HEIGVD-AIT-2016-Labo-Docker
+
+## Task 1
+### Deliverables
+1. Take a screenshot of the stats page of HAProxy at http://192.168.42.42:1936. You should see your backend nodes. It should be really similar to the screenshot of the previous task.
+![statsPageTask0](/assets/img/Screenshot_task1.png)
+2. Describe your difficulties for this task and your understanding of what is happening during this task. Explain in your own words why are we installing a process supervisor. Do not hesitate to do more research and to find more articles on that topic to illustrate the problem.
+
+No problem encountered in this part.
+
+As answered on question 5, installing a process supervisor allows docker to run simultaneously several processes(=several services).
+
