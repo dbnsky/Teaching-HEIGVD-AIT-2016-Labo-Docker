@@ -93,7 +93,7 @@ As answered on question 5, installing a process supervisor allows docker to run 
    - [list of file from the node folder](./logs/task5/)
 
    In addition, provide a log file containing the output of the docker ps console. One file expected.
-   - log file [docker ps console](./logs/task5/)
+   - log file : [docker ps console](./logs/task5/)
 
 ## Task 6
 ### Deliverables
