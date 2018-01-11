@@ -79,10 +79,17 @@ For running applications on large cluster of computers, [Hadoop](https://hadoop.
 
 ## Task 4
 ### Deliverables
-1.
-2.
-3.
-4.
+
+1. Take a look at the Docker documentation on image layers. Tell us about the pros and cons to merge as much as possible of the command.
+
+
+2. Propose a different approach to architecture our images to be able to reuse as much as possible what we have done. Your proposition should also try to avoid as much as possible repetitions between your images.
+
+
+3. Provide the /tmp/haproxy.cfg file generated in the ha container after each step. Place the output into the logs folder like you already did for the Docker logs in the previous tasks. Three files are expected.
+
+
+4.Based on the three output files you have collected, what can you say about the way we generate it? What is the problem if any?
 
 ## Task 5
 ### Deliverables
