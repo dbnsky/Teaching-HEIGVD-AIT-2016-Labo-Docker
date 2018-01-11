@@ -75,14 +75,22 @@ As answered on question 5, installing a process supervisor allows docker to run 
 ## Task 5
 ### Deliverables
 1. Provide the file /usr/local/etc/haproxy/haproxy.cfg generated in the ha container after each step. Three files are expected.
+   - haproxy.cfg : [after start ha](./logs/task5/)
+   - haproxy.cfg : [after start s1](./logs/task5/)
+   - haproxy.cfg : [after start s1 & s2](./logs/task5/)
+
    In addition, provide a log file containing the output of the docker ps console and another file (per container) with docker inspect <container>. Four files are expected.
+   - Output of : [Docker ps console](./logs/task5/)
+   - Output of : [Docker inspect ha](./logs/task5/)
+   - Output of : [Docker inspect s1](./logs/task5/)
+   - Output of : [Docker inspect s2](./logs/task5/)
 
 2. Provide the list of files from the /nodes folder inside the ha container. One file expected with the command output.
+   - [list of files from the nodes folder](./logs/task5/)
 
 3. Provide the configuration file after you stopped one container and the list of nodes present in the /nodes folder. One file expected with the command output. Two files are expected.
    In addition, provide a log file containing the output of the docker ps console. One file expected.
 
-4. (Optional:) Propose a different approach to manage the list of backend nodes. You do not need to implement it. You can also propose your own tools or the ones you discovered online. In that case, do not forget to cite your references.
 
 ## Task 6
 ### Deliverables
