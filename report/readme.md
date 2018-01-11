@@ -43,3 +43,19 @@ No problem encountered in this part.
 
 As answered on question 5, installing a process supervisor allows docker to run simultaneously several processes(=several services).
 
+
+## Task 2
+
+[//]: <> (Anyway, in our current solution, there is kind of misconception around the way we create the Serf cluster. In the deliverables, describe which problem exists with the current solution based on the previous explanations and remarks. Propose a solution to solve the issue.)
+
+
+There was no need for us to solve the DNS problem as our containers can communicate with each other already. 
+![boot ok](img/Task2-boot.png)
+
+### Deliverables
+
+2. 
+
+3. Serf uses a gossip protocol so that all nodes can communicate with each other. The gossip protocol allows each node to communicate with a set number of other nodes thus creating a mesh-network allowing nodes to fail without compromising the whole network. Those failed nodes are quickly detected by the whole network thanks to a random probing technique.
+For running applications on large cluster of computers, [Hadoop](https://hadoop.apache.org/) seems like a good solution.
+
