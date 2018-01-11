@@ -80,8 +80,7 @@ As answered on question 5, installing a process supervisor allows docker to run 
 2. Provide the list of files from the /nodes folder inside the ha container. One file expected with the command output.
 
 3. Provide the configuration file after you stopped one container and the list of nodes present in the /nodes folder. One file expected with the command output. Two files are expected.
-
-In addition, provide a log file containing the output of the docker ps console. One file expected.
+   In addition, provide a log file containing the output of the docker ps console. One file expected.
 
 4. (Optional:) Propose a different approach to manage the list of backend nodes. You do not need to implement it. You can also propose your own tools or the ones you discovered online. In that case, do not forget to cite your references.
 
