@@ -89,8 +89,11 @@ As answered on question 5, installing a process supervisor allows docker to run 
    - [list of files from the nodes folder](./logs/task5/)
 
 3. Provide the configuration file after you stopped one container and the list of nodes present in the /nodes folder. One file expected with the command output. Two files are expected.
-   In addition, provide a log file containing the output of the docker ps console. One file expected.
+   - haproxy.cfg : [after stopping s1](./logs/task5/)
+   - [list of file from the node folder](./logs/task5/)
 
+   In addition, provide a log file containing the output of the docker ps console. One file expected.
+   - log file [docker ps console](./logs/task5/)
 
 ## Task 6
 ### Deliverables
