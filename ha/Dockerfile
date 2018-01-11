@@ -3,7 +3,7 @@ FROM haproxy:1.5
 
 MAINTAINER Yann Mahmoudi <yann.mahmoudi@heig-vd.ch> & Emmanuel Schmid <emmanuel.schmid@heig-vd.ch>
 
- Install some tools
+# Install some tools
 # TODO: [HB] Update to install required tool to install NodeJS
 RUN apt-get update && apt-get -y install wget curl vim rsyslog
 
@@ -28,6 +28,8 @@ COPY services/ha /etc/services.d/ha
 RUN chmod +x /etc/services.d/ha/run
 
 # TODO: [Serf] Add Serf S6 setup
+COPY services/serf /etc/services.d/serf
+RUN chmod +x /etc/services.d/serf/run
 
 # TODO: [Serf] Copy events handler scripts
 RUN mkdir /serf-handlers
