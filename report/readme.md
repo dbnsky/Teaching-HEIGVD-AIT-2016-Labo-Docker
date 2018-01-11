@@ -1,4 +1,5 @@
- 1. A production envirionnement has to be scalable and the current solution can't handle automatically and easily an increasment of the trafic.
+## Task 0 
+1. A production envirionnement has to be scalable and the current solution can't handle automatically and easily an increasment of the trafic.
    Adding or removing nodes involves a manual configuration and a resart of the containers. The service will be down and that's not a acceptable !
 
 2 Follow the instructions to add a new server node to the current configuration
@@ -23,3 +24,9 @@
 6. In this current solution adding more web server nodes won't work as excepted, because adding node to the load balancer configuration is hardcoded.
    It needs an human action. So it definitley not dynamic ! A dynamic solution will be implemented using Handlebars and template (nodeJS).
    Each time a node is added/removed, the Sref handler script will generated a configuration file for HAProxy.
+
+###Deliverables
+1. Take a screenshot of the stats page of HAProxy at http://192.168.42.42:1936. You should see your backend nodes.
+![statsPageTask0](assets/img/Screenshot_task0.png)
+
+2. Give the URL of your repository URL in the lab report : https://github.com/dbnsky/Teaching-HEIGVD-AIT-2016-Labo-Docker
