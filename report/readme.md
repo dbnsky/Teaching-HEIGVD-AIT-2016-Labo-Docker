@@ -43,7 +43,16 @@ No problem encountered in this part.
 
 As answered on question 5, installing a process supervisor allows docker to run simultaneously several processes(=several services).
 
+
 ## Task 2
+
+[//]: <> (Anyway, in our current solution, there is kind of misconception around the way we create the Serf cluster. In the deliverables, describe which problem exists with the current solution based on the previous explanations and remarks. Propose a solution to solve the issue.)
+
+
+There was no need for us to solve the DNS problem as our containers can communicate with each other already. 
+![boot ok](img/Task2-boot.png)
+
+
 ### Deliverables
 1. Provide the docker log output for each of the containers: ha, s1 and s2.
    -ha
@@ -52,6 +61,9 @@ As answered on question 5, installing a process supervisor allows docker to run 
 2. Give the answer to the question about the existing problem with the current solution.
 
 3. Give an explanation on how Serf is working. Read the official website to get more details about the GOSSIP protocol used in Serf. Try to find other solutions that can be used to solve similar situations where we need some auto-discovery mechanism.
+
+Serf uses a gossip protocol so that all nodes can communicate with each other. The gossip protocol allows each node to communicate with a set number of other nodes thus creating a mesh-network allowing nodes to fail without compromising the whole network. Those failed nodes are quickly detected by the whole network thanks to a random probing technique.
+For running applications on large cluster of computers, [Hadoop](https://hadoop.apache.org/) seems like a good solution.
 
 ## Task 3
 ### Deliverables
