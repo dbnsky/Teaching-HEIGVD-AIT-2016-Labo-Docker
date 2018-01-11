@@ -88,6 +88,7 @@ For running applications on large cluster of computers, [Hadoop](https://hadoop.
 
 3. Provide the /tmp/haproxy.cfg file generated in the ha container after each step. Place the output into the logs folder like you already did for the Docker logs in the previous tasks. Three files are expected.
 
+    The files are in the logs
 
 4.Based on the three output files you have collected, what can you say about the way we generate it? What is the problem if any?
 
