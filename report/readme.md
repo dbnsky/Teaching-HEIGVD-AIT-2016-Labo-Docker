@@ -56,11 +56,11 @@ As answered on question 5, installing a process supervisor allows docker to run 
 ## Task 3
 ### Deliverables
 1. Provide the docker log output for each of the containers: ha, s1 and s2.
-   - Ha logs (start) : [ha logs start](./logs/task3/)
-   - S1 logs (start) :  [s1 logs start ](./logs/task3/)
-   - S2 logs (start): [s2 logs start ](./logs/task3/)
-   - Ha logs (after start s1) : [ha logs after s1 start](./logs/task3/)
-   - Ha logs (after start s2)  : [ha logs after s2 start](./logs/task3/)
+   - Ha logs: [start ha](./logs/task3/)
+   - S1 logs: [start s1](./logs/task3/)
+   - S2 logs: [start s2](./logs/task3/)
+   - Ha logs: [after s1 start](./logs/task3/)
+   - Ha logs: [after s2 start](./logs/task3/)
 
 2. Provide the logs from the ha container gathered directly from the /var/log/serf.log file present in the container. 
    - Ha :serf log  [ha - serf log](./logs/task3/)
