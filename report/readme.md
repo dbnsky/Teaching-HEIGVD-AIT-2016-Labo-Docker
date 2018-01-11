@@ -45,16 +45,50 @@ As answered on question 5, installing a process supervisor allows docker to run 
 
 ## Task 2
 ### Deliverables
+1. Provide the docker log output for each of the containers: ha, s1 and s2.
+   -ha
+   -s1
+   -s2
+2. Give the answer to the question about the existing problem with the current solution.
+
+3. Give an explanation on how Serf is working. Read the official website to get more details about the GOSSIP protocol used in Serf. Try to find other solutions that can be used to solve similar situations where we need some auto-discovery mechanism.
 
 ## Task 3
 ### Deliverables
+1. Provide the docker log output for each of the containers: ha, s1 and s2.
+   -ha
+   -s1
+   -s2
+
+2. Provide the logs from the ha container gathered directly from the /var/log/serf.log file present in the container. 
+   -ha
 
 ## Task 4
 ### Deliverables
+1.
+2.
+3.
+4.
 
 ## Task 5
 ### Deliverables
+1. Provide the file /usr/local/etc/haproxy/haproxy.cfg generated in the ha container after each step. Three files are expected.
+   In addition, provide a log file containing the output of the docker ps console and another file (per container) with docker inspect <container>. Four files are expected.
+
+2. Provide the list of files from the /nodes folder inside the ha container. One file expected with the command output.
+
+3. Provide the configuration file after you stopped one container and the list of nodes present in the /nodes folder. One file expected with the command output. Two files are expected.
+
+In addition, provide a log file containing the output of the docker ps console. One file expected.
+
+4. (Optional:) Propose a different approach to manage the list of backend nodes. You do not need to implement it. You can also propose your own tools or the ones you discovered online. In that case, do not forget to cite your references.
 
 ## Task 6
 ### Deliverables
+1. Take a screenshots of the HAProxy stat page showing more than 2 web applications running. Additional screenshots are welcome to see a sequence of experimentations like shutting down a node and starting more nodes.
 
+   Also provide the output of docker ps in a log file. At least one file is expected. You can provide one output per step of your experimentation according to your screenshots.
+
+2. Give your own feelings about the final solution. Propose improvements or ways to do the things differently. If any, provide references to your readings for the improvements.
+
+3. (Optional:) Present a live demo where you add and remove a backend container.
