@@ -68,11 +68,11 @@ For running applications on large cluster of computers, [Hadoop](https://hadoop.
 ## Task 3
 ### Deliverables
 1. Provide the docker log output for each of the containers: ha, s1 and s2.
-   - Ha logs: [start ha](./logs/task3/)
-   - S1 logs: [start s1](./logs/task3/)
-   - S2 logs: [start s2](./logs/task3/)
-   - Ha logs: [after s1 start](./logs/task3/)
-   - Ha logs: [after s2 start](./logs/task3/)
+   - Ha logs: [start ha](./logs/task3/haStart.log)
+   - S1 logs: [start s1](./logs/task3/s1Start.log)
+   - S2 logs: [start s2](./logs/task3/s2Start.log)
+   - Ha logs: [after s1 start](./logs/task3/haLogsAfterStartS1.log)
+   - Ha logs: [after s2 start](./logs/task3/haLogsAfterStartS2.log)
 
 2. Provide the logs from the ha container gathered directly from the /var/log/serf.log file present in the container. 
    - serf log  [logs](./logs/task3/)
