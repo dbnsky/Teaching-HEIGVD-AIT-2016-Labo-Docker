@@ -43,3 +43,18 @@ No problem encountered in this part.
 
 As answered on question 5, installing a process supervisor allows docker to run simultaneously several processes(=several services).
 
+## Task 2
+### Deliverables
+
+## Task 3
+### Deliverables
+
+## Task 4
+### Deliverables
+
+## Task 5
+### Deliverables
+
+## Task 6
+### Deliverables
+
