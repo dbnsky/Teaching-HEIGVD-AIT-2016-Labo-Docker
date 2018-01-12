@@ -1,6 +1,7 @@
 # The base image is one of the offical one
 FROM node:0.12.2-wheezy
 
+
 MAINTAINER Yann Mahmoudi <yann.mahmoudi@heig-vd.ch> & Emmanuel Schmid <emmanuel.schmid@heig-vd.ch>
 
 # Install the required tools to run our webapp and some utils
@@ -27,6 +28,9 @@ RUN mkdir /opt/bin \
 # Copy the S6 service and make the run script executable
 COPY services/node /etc/services.d/node
 RUN chmod +x /etc/services.d/node/run
+
+COPY services/serf /etc/services.d/serf
+RUN chmod +x /etc/services.d/serf/run
 
 # TODO: [Serf] Add Serf S6 setup
 
