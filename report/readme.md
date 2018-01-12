@@ -82,9 +82,12 @@ For running applications on large cluster of computers, [Hadoop](https://hadoop.
 
 1. Take a look at the Docker documentation on image layers. Tell us about the pros and cons to merge as much as possible of the command.
 
+By 
 
 2. Propose a different approach to architecture our images to be able to reuse as much as possible what we have done. Your proposition should also try to avoid as much as possible repetitions between your images.
 
+  We could make a base image named `core`, itself being made `FROM debian:jessie`, on which we could build two other images `ha` and `webapp`. We would then need to properly install on those two images `haproxy` and `node` respectively. 
+  The `core` image would contain everything shared between the two types of containers needed (such as `serf` and other packages).  
 
 3. Provide the /tmp/haproxy.cfg file generated in the ha container after each step. Place the output into the logs folder like you already did for the Docker logs in the previous tasks. Three files are expected.
 
