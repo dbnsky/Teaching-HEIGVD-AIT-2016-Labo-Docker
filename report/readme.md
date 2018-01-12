@@ -82,7 +82,7 @@ For running applications on large cluster of computers, [Hadoop](https://hadoop.
 
 1. Take a look at the Docker documentation on image layers. Tell us about the pros and cons to merge as much as possible of the command.
 
-By 
+ 
 
 2. Propose a different approach to architecture our images to be able to reuse as much as possible what we have done. Your proposition should also try to avoid as much as possible repetitions between your images.
 
