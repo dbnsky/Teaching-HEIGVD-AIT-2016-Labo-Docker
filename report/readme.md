@@ -98,25 +98,25 @@ For running applications on large cluster of computers, [Hadoop](https://hadoop.
 ## Task 5
 ### Deliverables
 1. Provide the file /usr/local/etc/haproxy/haproxy.cfg generated in the ha container after each step. Three files are expected.
-   - haproxy.cfg : [after start ha](./logs/task5/)
-   - haproxy.cfg : [after start s1](./logs/task5/)
-   - haproxy.cfg : [after start s1 & s2](./logs/task5/)
+   - haproxy.cfg : [after start ha](./logs/task5/haStartproxy.log)
+   - haproxy.cfg : [after start s1](./logs/task5/s1StartProxy.log)
+   - haproxy.cfg : [after start s1 & s2](./logs/task5/s2StartProxy.log)
 
    In addition, provide a log file containing the output of the docker ps console and another file (per container) with docker inspect <container>. Four files are expected.
-   - Output of : [Docker ps console](./logs/task5/)
-   - Output of : [Docker inspect ha](./logs/task5/)
-   - Output of : [Docker inspect s1](./logs/task5/)
-   - Output of : [Docker inspect s2](./logs/task5/)
+   - Output of : [Docker ps console](./logs/task5/dockerps.log)
+   - Output of : [Docker inspect ha](./logs/task5/inspectHa.log)
+   - Output of : [Docker inspect s1](./logs/task5/inspectS1.log)
+   - Output of : [Docker inspect s2](./logs/task5/inspectS2.log)
 
 2. Provide the list of files from the /nodes folder inside the ha container. One file expected with the command output.
-   - [list of files from the nodes folder](./logs/task5/)
+   - [list of files from the nodes folder](./logs/task5/ls.log)
 
 3. Provide the configuration file after you stopped one container and the list of nodes present in the /nodes folder. One file expected with the command output. Two files are expected.
-   - haproxy.cfg : [after stopping s1](./logs/task5/)
-   - [list of file from the node folder](./logs/task5/)
+   - haproxy.cfg : [after stopping s1](./logs/task5/stopS1proxy.log)
+   - [list of file from the node folder](./logs/task5/listNodeStopS1.log)
 
    In addition, provide a log file containing the output of the docker ps console. One file expected.
-   - log file : [docker ps console](./logs/task5/)
+   - log file : [docker ps console](./logs/task5/dockerpsStopS1.log)
 
 ## Task 6
 ### Deliverables
