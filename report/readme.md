@@ -126,4 +126,11 @@ For running applications on large cluster of computers, [Hadoop](https://hadoop.
 
 2. Give your own feelings about the final solution. Propose improvements or ways to do the things differently. If any, provide references to your readings for the improvements.
 
-3. (Optional:) Present a live demo where you add and remove a backend container.
+## Difficulties
+
+
+## Conclusion
+This lab was one of the most interesting that we've ever done! We really enjoy working on it and we've improved our knowledge related to Docker and HAProxy.
+We are now aware about difficulties and concepts behind a dynamic scaling environment used in a production context.
+
+
