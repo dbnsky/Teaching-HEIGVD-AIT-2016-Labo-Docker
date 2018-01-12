@@ -75,7 +75,7 @@ For running applications on large cluster of computers, [Hadoop](https://hadoop.
    - Ha logs: [after s2 start](./logs/task3/haLogsAfterStartS2.log)
 
 2. Provide the logs from the ha container gathered directly from the /var/log/serf.log file present in the container. 
-   - serf log  [logs](./logs/task3/)
+   - serf log  [logs](./logs/task3/serf.log)
 
 ## Task 4
 ### Deliverables
