@@ -5,16 +5,16 @@ Yann Mahmoudi <yann.mahmoudi@heig-vd.ch> & Emmanuel Schmid <emmanuel.schmid@heig
    Adding or removing nodes involves a manual configuration and a resart of the containers. The service will be down and that's not a acceptable !
 
 2. Follow the instructions to add a new server node to the current configuration
-	1. Start a new container (=server node)
-    	   `docker run -d --name -s3 softengheigvd/webapp`
-	2. Add new web server node (s3) to the configuration file of HAProxy
-    	   `server s3 <s3>:3000 check`
-	3. Update the run.sh script
-    	   `sed -i 's/<s3>/$S3_PORT_3000_TCP_ADDR/g' /usr/local/etc/haproxy/haproxy.cfg`
-	4. Rebuild ha container
-    	   `docker build -t softengheigvd/ha .`
-	5. Run ha container
-    	   `docker run -d -p 80:80 -p 1936:1936 -p 9999:9999 --link s1 --link s2 --link s3 --name ha softengheigvd/ha`
+	1. Start a new container (=server node)  
+    	   `docker run -d --name -s3 softengheigvd/webapp`  
+	2. Add new web server node (s3) to the configuration file of HAProxy  
+    	   `server s3 <s3>:3000 check`  
+	3. Update the run.sh script  
+    	   `sed -i 's/<s3>/$S3_PORT_3000_TCP_ADDR/g' /usr/local/etc/haproxy/haproxy.cfg`  
+	4. Rebuild ha container   
+    	   `docker build -t softengheigvd/ha .`  
+	5. Run ha container  
+    	   `docker run -d -p 80:80 -p 1936:1936 -p 9999:9999 --link s1 --link s2 --link s3 --name ha softengheigvd/ha`  
 
 3. A better approach consit in a dynamic configuration of haproxy.cfg when adding or removing a node. This approach matches the requirement of a production environnement which is scalability.
 
