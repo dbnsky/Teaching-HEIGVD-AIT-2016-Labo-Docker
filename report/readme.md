@@ -127,10 +127,11 @@ For running applications on large cluster of computers, [Hadoop](https://hadoop.
 2. Give your own feelings about the final solution. Propose improvements or ways to do the things differently. If any, provide references to your readings for the improvements.
 
 ## Difficulties
-
+We faced minor difficulties which could have been avoided by reading carefully the documenation. All steps are well-explained with usefull informations, links and schemas.
+The most difficult part was to understand and to answer the question with our words !
 
 ## Conclusion
 This lab was one of the most interesting that we've ever done! We really enjoy working on it and we've improved our knowledge related to Docker and HAProxy.
-We are now aware about difficulties and concepts behind a dynamic scaling environment used in a production context.
+To conclude, we are now aware about difficulties and concepts behind a dynamic scaling environment used in a production context.
 
 
